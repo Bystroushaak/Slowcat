@@ -3,8 +3,9 @@
  * Slowcat in D
  * 
  * Author:  Bystroushaak (bystrousak@kitakitsune.org)
- * Version: 1.1.0
+ * Version: 1.1.1
  * Date:    17.10.2011
+ * Web:     https://github.com/Bystroushaak/Slowcat
  * 
  * Copyright: 
  *     This work is licensed under a CC BY.
