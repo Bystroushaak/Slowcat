@@ -3,8 +3,8 @@
  * Slowcat in D
  * 
  * Author:  Bystroushaak (bystrousak@kitakitsune.org)
- * Version: 1.0.0
- * Date:    16.10.2011
+ * Version: 1.1.0
+ * Date:    17.10.2011
  * 
  * Copyright: 
  *     This work is licensed under a CC BY.
@@ -50,10 +50,16 @@ int main(string[] args){
 		printHelp(args[0], stderr);
 		return 1;
 	}
+	if (help){
+		writeln("Slowcat in D by Bystroushaak (bystrousak@kitakitsune.org)");
+		writeln("This program slows output to terminal.\n");
+		printHelp(args[0]);
+		return 0;
+	}
 	if (time <= 0)
 		time = 100;
 	if (show_lines <= 0)
-		time = 1;
+		show_lines = 1;
 	
 	foreach(ulong line_num, string line; lines(stdin)){
 		write(line);
